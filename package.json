@@ -1,0 +1,20 @@
+{
+  "name": "start_multiple_projects",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-master": "cross-env SERVER_PORT=3355 node src/index.js",
+    "start-backup": "cross-env SERVER_PORT=3356 node src/index.js"
+  },
+  "keywords": [],
+  "author": "Kent Chien",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
